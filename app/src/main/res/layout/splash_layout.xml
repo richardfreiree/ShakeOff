@@ -5,14 +5,38 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashActivity">
+    tools:context=".SplashActivity"
+    android:background="#D15D3B"
+    >
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="ShakeOff"
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:id="@+id/SplashLogo"
+        android:src="@drawable/logo"
+        android:scaleType="centerCrop"
         android:layout_centerInParent="true"
-        ce
         />
+    <TextView
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:text="ShakeOff"
+        android:layout_alignBottom="@id/SplashLogo"
+        android:layout_centerInParent="true"
+        android:id="@+id/SplashText"
+        android:fontFamily="@font/font"
+        android:textSize="35dp"
+        android:textColor="#ffff"
+
+        />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_alignBottom="@id/SplashText"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#D15D3B" />
 
 </RelativeLayout>
