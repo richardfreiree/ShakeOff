@@ -37,6 +37,7 @@
         android:indeterminate="true"
         android:layout_alignBottom="@id/SplashText"
         android:layout_centerInParent="true"
-        android:backgroundTint="#D15D3B" />
+        app:indicatorColor="#D15D3B"
+         />
 
 </RelativeLayout>
