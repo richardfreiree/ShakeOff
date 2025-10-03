@@ -8,8 +8,12 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class LoginActivity extends AppCompatActivity {
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.textfield.TextInputEditText;
 
+public class LoginActivity extends AppCompatActivity {
+    TextInputEditText LoginEmail, LoginPassword;
+    MaterialButton LoginEntrar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,5 +24,11 @@ public class LoginActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        LoginEmail = FindViewById(R.id.LoginEmail);
+        LoginPassword = FindViewById(R.id.LoginPassword);
+        LoginEntrar = FindViewById(R.id.LoginEntrar);
+
+
+
     }
 }
