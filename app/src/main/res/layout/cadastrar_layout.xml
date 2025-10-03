@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:layout_margin="20dp"
+    >
+
+    <ImageView
+        android:layout_marginTop="70dp"
+        android:layout_width="180dp"
+        android:layout_height="170dp"
+        android:src="@drawable/logo"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/EsqSenhaLogo"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ShakeOff"
+        android:textSize="35dp"
+        android:fontFamily="@font/font"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#D15D3B"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/EsqSenhaTextoLogo"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="clear_text"
+        android:layout_marginBottom="20dp"
+        app:counterMaxLength="50"
+        app:startIconDrawable="@drawable/baseline_email"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Coloque seu Email"
+            android:id="@+id/EsqSenhaEmail"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/baseline_password"
+        app:counterMaxLength="20"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/EsqSenhaPassword"
+            android:hint="Insira sua senha"
+            android:layout_marginBottom="20dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/baseline_password"
+        app:counterMaxLength="20"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/EsqSenhaPasswordNov"
+            android:hint="Insira sua senha novamente"
+            android:layout_marginBottom="20dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        >
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:textSize="20dp"
+            android:text="Confirmar"
+            android:layout_marginRight="30dp"
+            app:cornerRadius="5dp"
+            android:id="@+id/EsqSenhaEntrar"
+            android:backgroundTint="#D15D3B"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="180dp"
+            android:id="@+id/EsqSenhaVoltar"
+            android:textSize="20dp"
+            android:layout_height="70dp"
+            android:backgroundTint="#fff"
+            android:textColor="#D15D3B"
+            app:cornerRadius="5dp"
+            style="@style/Widget.Material3.Button.IconButton.Outlined"
+            android:text="Voltar"
+            />
+    </LinearLayout>
+</LinearLayout>
