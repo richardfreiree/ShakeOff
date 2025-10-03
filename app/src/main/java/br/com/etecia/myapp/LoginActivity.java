@@ -1,6 +1,9 @@
 package br.com.etecia.myapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,11 +27,23 @@ public class LoginActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        LoginEmail = FindViewById(R.id.LoginEmail);
-        LoginPassword = FindViewById(R.id.LoginPassword);
-        LoginEntrar = FindViewById(R.id.LoginEntrar);
+        LoginEmail = findViewById(R.id.LoginEmail);
+        LoginPassword = findViewById(R.id.LoginPassword);
+        LoginEntrar = findViewById(R.id.LoginEntrar);
 
+        LoginEntrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String email,senha;
+                email = LoginEmail.getText().toString();
+                senha = LoginPassword.getText().toString();
+            if (email.equals("etecia") &&  senha.equals("12345")){
+            startActivity(new Intent(getApplicationContext(),MenuPrinActivity.class));
+            }else{
+            Toast.makeText(getApplicationContext(),"Usuário ou senha incorreto",Toast.LENGTH_SHORT).show();
 
-
+            };
+            }
+        });
     }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -7,4 +7,39 @@
     android:layout_height="match_parent"
     tools:context=".MenuPrinActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_marginTop="70dp"
+        android:layout_width="180dp"
+        android:layout_height="170dp"
+        android:src="@drawable/logo"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/MenuPrinLoginLogo"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ShakeOff"
+        android:textSize="35dp"
+        android:fontFamily="@font/font"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#D15D3B"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/MenuPrinTextoLogo"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="180dp"
+        android:id="@+id/MenuPrinVoltar"
+        android:textSize="20dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#fff"
+        android:textColor="#D15D3B"
+        app:cornerRadius="5dp"
+        style="@style/Widget.Material3.Button.IconButton.Outlined"
+        android:text="Voltar"
+        android:layout_gravity="center_horizontal"
+        />
+
+</LinearLayout>
