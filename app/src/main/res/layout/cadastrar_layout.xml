@@ -28,7 +28,7 @@
         android:layout_gravity="center_horizontal"
         android:textColor="#D15D3B"
         android:layout_marginBottom="20dp"
-        android:id="@+id/EsqSenhaTextoLogo"
+        android:id="@+id/CadSenhaTextoLogo"
         />
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -43,7 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="Coloque seu Email"
-            android:id="@+id/EsqSenhaEmail"
+            android:id="@+id/CadSenhaEmail"
             />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -61,7 +61,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/EsqSenhaPassword"
+            android:id="@+id/CadSenhaPassword"
             android:hint="Insira sua senha"
             android:layout_marginBottom="20dp"
             />
@@ -79,7 +79,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/EsqSenhaPasswordNov"
+            android:id="@+id/CadSenhaPasswordNov"
             android:hint="Insira sua senha novamente"
             android:layout_marginBottom="20dp"
             />
@@ -100,13 +100,13 @@
             android:text="Confirmar"
             android:layout_marginRight="30dp"
             app:cornerRadius="5dp"
-            android:id="@+id/EsqSenhaEntrar"
+            android:id="@+id/CadSenhaEntrar"
             android:backgroundTint="#D15D3B"
             />
 
         <com.google.android.material.button.MaterialButton
             android:layout_width="180dp"
-            android:id="@+id/EsqSenhaVoltar"
+            android:id="@+id/CadSenhaVoltar"
             android:textSize="20dp"
             android:layout_height="70dp"
             android:backgroundTint="#fff"

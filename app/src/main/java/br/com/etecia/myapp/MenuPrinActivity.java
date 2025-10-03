@@ -16,6 +16,7 @@ import com.google.android.material.button.MaterialButton;
 public class MenuPrinActivity extends AppCompatActivity {
 
     MaterialButton MenuPrinVoltar;
+    MaterialButton LoginEsqueceuSenha;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +28,7 @@ public class MenuPrinActivity extends AppCompatActivity {
             return insets;
         });
     MenuPrinVoltar = findViewById(R.id.MenuPrinVoltar);
-
+    LoginEsqSenha = findViewById(R.id.LoginEsqueceuSenha);
     MenuPrinVoltar.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
